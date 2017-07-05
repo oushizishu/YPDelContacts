@@ -1,9 +1,10 @@
 # YPDelContacts
 删除手机通讯录中的所有人(ios9以上)
 
-# 基于#Contacts
+# 基于Contacts
 这个是没有UI的, 需要自己写UI, 我自己的需求很简单, 只是为了删除本地通讯录的所有联系人.
-需要注意的几点: 
+
+# 对Contact操作过程中需要注意的几点: 
 - 使用```#import <Contacts/Contacts.h>```的时候, 需要先获取授权, 可以在```APPDelegate.h```中请求获取授权,
 我是在```viewController```中请求的,还需要在```info.plist```配置```NSContactsUsageDescription```.
 - key设置为```CNContactGivenNameKey和CNContactPhoneNumbersKey```, 可以取出所有有giveName和PhoneNumber
